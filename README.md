@@ -2,5 +2,5 @@
 
 Member 1: Zander Bournand<br />
 Member 2: <br />
-Member 3: Cindy Lin <br />
-Member 4: <br />
+Member 3: <br />
+Member 4: Cindy Lin <br />
