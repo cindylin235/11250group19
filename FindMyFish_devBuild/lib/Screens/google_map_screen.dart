@@ -27,23 +27,23 @@ class _GoogleMapScreenState extends State<GoogleMapScreen> {
       setState(() {
         _markers.add(
           Marker(
-              markerId: MarkerId('id-1'),
+              markerId: MarkerId('Lake_Alice'),
               position: LatLng(29.642633,-82.361358),
               icon: mapMarker,
               infoWindow: InfoWindow(
                 title: 'Lake Alice',
-                snippet: 'The Swamp',
+                snippet: 'test spot 1',
               ),
           ),
         );
         _markers.add(
           Marker(
-            markerId: MarkerId('id-2'),
+            markerId: MarkerId('Bivens Arm'),
             position: LatLng(29.625549,-82.346014),
             icon: mapMarker,
             infoWindow: InfoWindow(
               title: 'Bivens Arm',
-              snippet: 'The Swamp',
+              snippet: 'test spot 2',
             ),
           ),
         );
