@@ -60,8 +60,8 @@ class _GoogleMapScreenState extends State<GoogleMapScreen> {
           onMapCreated: _onMapCreated,
           markers: _markers,
           initialCameraPosition: CameraPosition(
-              target: LatLng(29.640619, -82.355532),
-              zoom: 13,
+              target: LatLng(29.651634, -82.324829),
+              zoom: 12.5,
           )
       )
     );
