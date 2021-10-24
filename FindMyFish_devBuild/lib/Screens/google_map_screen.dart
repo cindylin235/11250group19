@@ -29,7 +29,7 @@ class _GoogleMapScreenState extends State<GoogleMapScreen> {
       setState(() {
         _markers.add(
           Marker(
-              markerId: MarkerId('Lake_Alic'),
+              markerId: MarkerId('Lake_Alice'),
               position: LatLng(29.642633,-82.361358),
               icon: mapMarker,
               onTap: () => Navigator.push(
