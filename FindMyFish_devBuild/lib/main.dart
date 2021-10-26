@@ -6,22 +6,32 @@ import 'package:untitled/Screens/google_map_screen.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
-var guidelinesList; // list of location documents with respective guidelines
+var guidelinesMap = Map(); // map of locations with respective information
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
 
   FirebaseFirestore.instance
-      .collection('Guidelines')
-      //.doc('Baymeadows, Duval County')
-      .get()
-      .then((QuerySnapshot qs) {
-        //guidelines = ds.data().toString();
-        //print(ds.data().toString());
-        guidelinesList = qs.docs;
-        print(qs.docs.elementAt(2).get("name").toString());
-  });
+    .collection('Demo')
+    .get()
+    .then((QuerySnapshot qs) {
+      var guidelinesList = qs.docs;
+
+      // put documents into a map with the location name as the key
+      for (var loc in guidelinesList) {
+        guidelinesMap[loc.get("name")]=loc;
+      }
+
+      // example of accessing the map and getting a field
+      for (var k in guidelinesMap.keys){
+        print(k + ": " + guidelinesMap[k].get("description").toString());
+      }
+    });
+
+  // for (var k in guidelinesList.keys) {
+  //   print("Key : $k, value : ${guidelinesList[k].toString()}");
+  // }
 
   runApp(MyApp());
 }
