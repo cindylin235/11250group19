@@ -1,18 +1,25 @@
 // ignore_for_file: prefer_const_constructors
 
+//Import all necessary packages to run
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
+import 'package:google_maps_flutter/google_maps_flutter.dart';
+import 'package:untitled/main.dart';
 
-class BivensArm extends StatelessWidget {
-  const BivensArm({Key? key}) : super(key: key);
+class LocationDetails extends StatelessWidget {
+  const LocationDetails({Key? key, required this.location}) : super(key: key);
 
+  //storing the location that we want to display the information for
+  final String location;
+
+  //Building the widget with the info stored in the database
   @override
   Widget build(BuildContext context) {
+
     // ignore: prefer_const_constructors
     return Scaffold(
 
         appBar: AppBar(
-          title: const Text("Bivens Arm", style: TextStyle(fontWeight: FontWeight.bold),),
+          title: Text(locationsMap[location].get("name").toString(), style: TextStyle(fontWeight: FontWeight.bold),),
           centerTitle: true,
         ),
         body: Column(
@@ -21,11 +28,11 @@ class BivensArm extends StatelessWidget {
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(0),
                 child: Image.asset(
-                  'Assets/biven.jpg',
+                  'Assets/' + location + '.jpg',
                   width: 400,
                   height: 300,
                   fit: BoxFit.cover,
-                  semanticLabel: 'Image of Bivens Arms',
+                  semanticLabel: 'Image of' + location,
                 ),
               ),
             ),
@@ -33,14 +40,14 @@ class BivensArm extends StatelessWidget {
               padding: EdgeInsets.all(10),
               child: Align(
                 alignment: Alignment.topLeft,
-                child: Text('Bivens Arm', style: TextStyle(decoration: TextDecoration.underline, fontSize: 20, fontWeight: FontWeight.bold)),
+                child: Text(location, style: TextStyle(decoration: TextDecoration.underline, fontSize: 20, fontWeight: FontWeight.bold)),
               ),
             ),
             Container(
               padding: EdgeInsets.all(10),
               child: Align(
                   alignment: Alignment.topLeft,
-                  child: Text('Bivens Arm is a body of water in Gainesville, Florida. Located west of U.S. Route 441 and south of Archer Road, it is a part of Paynes Prairie. \n \n Bivens Arm is a small shallow lake covering approximately 189 acres (76 ha) in southwest Gainesville. Bivens Arm is a unique environment, which supports a wide diversity of plant and animal life in an urban setting.')
+                  child: Text(locationsMap[location].get("description").toString())
               ),
             )
           ],
