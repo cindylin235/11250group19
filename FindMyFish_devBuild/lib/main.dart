@@ -1,41 +1,25 @@
 // ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors
 
-//Import all necessary packages to run
 import 'package:flutter/material.dart';
 import 'package:untitled/Screens/google_map_screen.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:untitled/data_repository.dart';
 
-//List and Map to store our Firebase data
-var locationsMap = Map(); // map of locations with respective information
-var locationsList;
+final DataRepository repository = DataRepository();
 
-//Storing database values in our map + running main app
-Future<void> main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp();
-
-  FirebaseFirestore.instance
-    .collection('Demo')
-    .get()
-    .then((QuerySnapshot qs) {
-      locationsList = qs.docs;
-
-      // put documents into a map with the location name as the key
-      for (var loc in locationsList) {
-        locationsMap[loc.get("name")]=loc;
-      }
-
-      // example of accessing the map and getting a field
-      for (var k in locationsMap.keys){
-        print(k + ": " + locationsMap[k].get("description").toString());
-      }
-    });
-
-  runApp(MyApp());
+void main() {
+  runApp(const MyApp());
 }
 
-//Our main widget that we see when starting the application
+/*var listLocations;
+
+var stringTest = repository.locations.get().then((QuerySnapshot qs) {
+  listLocations = qs.docs;
+});
+
+var test = listLocations.elementAt(1).toString();*/
+
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
@@ -51,13 +35,12 @@ class MyApp extends StatelessWidget {
   }
 }
 
-//Extension of main-widget, where we will add the information you see on the screen.
 class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Home Screen"),
+        title: Text('Home Screen'),
       ),
       body: Center(
         child: Column(
