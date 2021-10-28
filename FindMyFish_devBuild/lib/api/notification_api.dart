@@ -1,32 +1,87 @@
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
+import 'package:timezone/data/latest.dart' as tz;
+import 'package:timezone/timezone.dart' as tz;
 
-class NotificationApi {
-  static final _notifications = FlutterLocalNotificationsPlugin();
+class NotificationService {
+  //NotificationService a singleton object
+  static final NotificationService _notificationService =
+  NotificationService._internal();
 
-  static Future _notificationDetails() async {
-    return NotificationDetails(
-      android: AndroidNotificationDetails(
-        'channel id',
-        'channel name',
-        importance: Importance.max,
-      ),
-      iOS: IOSNotificationDetails(),
+  factory NotificationService() {
+    return _notificationService;
+  }
+
+  NotificationService._internal();
+
+  static const channelId = '123';
+
+  final FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin =
+  FlutterLocalNotificationsPlugin();
+
+  Future<void> init() async {
+    final AndroidInitializationSettings initializationSettingsAndroid =
+    AndroidInitializationSettings('@mipmap/ic_launcher');
+
+    final IOSInitializationSettings initializationSettingsIOS =
+    IOSInitializationSettings(
+      requestSoundPermission: false,
+      requestBadgePermission: false,
+      requestAlertPermission: false,
+    );
+
+    final InitializationSettings initializationSettings =
+    InitializationSettings(
+        android: initializationSettingsAndroid,
+        iOS: initializationSettingsIOS,
+        macOS: null);
+
+    tz.initializeTimeZones();
+
+  }
+
+  AndroidNotificationDetails _androidNotificationDetails =
+  AndroidNotificationDetails(
+    'channel ID',
+    'channel name',
+    playSound: true,
+    priority: Priority.high,
+    importance: Importance.high,
+  );
+
+  Future<void> showNotifications() async {
+    await flutterLocalNotificationsPlugin.show(
+      0,
+      "Notification Title",
+      "This is the Notification Body!",
+      NotificationDetails(android: _androidNotificationDetails),
     );
   }
 
+  Future<void> scheduleNotifications() async {
+    await flutterLocalNotificationsPlugin.zonedSchedule(
+        0,
+        "Notification Title",
+        "This is the Notification Body!",
+        tz.TZDateTime.now(tz.local).add(const Duration(seconds: 5)),
+        NotificationDetails(android: _androidNotificationDetails),
+        androidAllowWhileIdle: true,
+        uiLocalNotificationDateInterpretation:
+        UILocalNotificationDateInterpretation.absoluteTime);
+  }
 
-  static Future showNotification({
-    int id = 0,
-    String? title,
-    String? body,
-    String? payload,
-    }) async =>
-      _notifications.show(
-        id,
-        title,
-        body,
-        await _notificationDetails(),
-        payload: payload,
-      );
+  Future<void> cancelNotifications(int id) async {
+    await flutterLocalNotificationsPlugin.cancel(id);
+  }
+
+  Future<void> cancelAllNotifications() async {
+    await flutterLocalNotificationsPlugin.cancelAll();
+  }
 }
+
+Future selectNotification(String payload) async {
+  //handle your logic here
+
+}
+
+
 

@@ -4,8 +4,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import '../api/notification_api.dart';
 
+
 class BivensArm extends StatelessWidget {
-  const BivensArm({Key? key}) : super(key: key);
+  NotificationService _notificationService = NotificationService();
+  BivensArm({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -54,12 +56,9 @@ class BivensArm extends StatelessWidget {
             child: Text('Test Notification', style: TextStyle(fontSize: 20.0),),
             color: Colors.blueAccent,
             textColor: Colors.white,
-            onPressed: () => NotificationApi.showNotification(
-                title: 'test one',
-                body:
-                    'another test',
-                payload: 'testpayload',
-            ),
+            onPressed: () async {
+              await _notificationService.scheduleNotifications();
+            }
             )
             )
             ],

@@ -49,7 +49,7 @@ class _GoogleMapScreenState extends State<GoogleMapScreen> {
             icon: mapMarker,
             onTap: () => Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => const BivensArm())
+                MaterialPageRoute(builder: (context) => BivensArm())
             ),
             infoWindow: InfoWindow(
               title: 'Bivens Arm',

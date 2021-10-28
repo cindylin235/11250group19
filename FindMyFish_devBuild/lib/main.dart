@@ -5,16 +5,12 @@ import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:untitled/Screens/google_map_screen.dart';
 import 'api/notification_api.dart';
 
-final FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin =
-    FlutterLocalNotificationsPlugin();
 
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-
-  var initializationSettingsAndroid =
-  AndroidInitializationSettings('logo');
-  runApp(const MyApp());
+  NotificationService().init();
+  runApp(MyApp());
 }
 
 
