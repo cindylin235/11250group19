@@ -64,7 +64,7 @@ class HomePage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-              'Google Map Demo',
+              'FindMyFish Demo',
               style: TextStyle(
                 fontSize: 24,
                 fontWeight: FontWeight.bold
