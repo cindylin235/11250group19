@@ -26,10 +26,6 @@ Future<void> main() async {
         locationsMap[loc.get("name")]=loc;
       }
 
-      // example of accessing the map and getting a field
-      for (var k in locationsMap.keys){
-        print(k + ": " + locationsMap[k].get("description").toString());
-      }
     });
 
   runApp(MyApp());

@@ -27,8 +27,21 @@ class LocationDetails extends StatelessWidget {
             Container(
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(0),
-                child: Image.asset(
-                  'Assets/' + location + '.jpg',
+                child: Image.network(
+                  locationsMap[location].get("image").toString(),
+                  loadingBuilder: (context, child, loadingProgress) {
+                    if (loadingProgress == null) {
+                      return child;
+                    }
+                    return Center(
+                      child: CircularProgressIndicator(
+                        value: loadingProgress.expectedTotalBytes != null
+                            ? loadingProgress.cumulativeBytesLoaded /
+                                num.parse(loadingProgress.expectedTotalBytes.toString())
+                            : null,
+                      ),
+                    );
+                  },
                   width: 400,
                   height: 300,
                   fit: BoxFit.cover,
