@@ -5,6 +5,8 @@ import 'package:flutter/material.dart';
 import 'package:untitled/Screens/google_map_screen.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:provider/provider.dart';
+import 'package:untitled/application_bloc.dart';
 
 //List and Map to store our Firebase data
 var locationsMap = Map(); // map of locations with respective information
@@ -16,7 +18,7 @@ Future<void> main() async {
   await Firebase.initializeApp();
 
   FirebaseFirestore.instance
-    .collection('Demo')
+    .collection('Guidelines')
     .get()
     .then((QuerySnapshot qs) {
       locationsList = qs.docs;
@@ -37,12 +39,15 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.indigo,
+    return ChangeNotifierProvider(
+      create: (context) => ApplicationBloc(),
+      child: MaterialApp(
+        title: 'Flutter Demo',
+        theme: ThemeData(
+          primarySwatch: Colors.indigo,
+        ),
+        home: HomePage(),
       ),
-      home: HomePage(),
     );
   }
 }

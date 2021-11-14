@@ -4,10 +4,13 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
+import 'package:provider/provider.dart';
 import 'package:untitled/Screens/location_details.dart';
 import 'package:untitled/main.dart';
 import 'package:untitled/location_service.dart';
 import 'package:geolocator/geolocator.dart';
+import 'package:provider/provider.dart';
+import 'package:untitled/application_bloc.dart';
 
 //Creating widget for our Google Maps API
 class GoogleMapScreen extends StatefulWidget {
@@ -26,7 +29,6 @@ class _GoogleMapScreenState extends State<GoogleMapScreen> {
   Set<Marker> _markers = {};
   late BitmapDescriptor mapMarker;
 
-  var geoLocator = Geolocator();
 
   @override
   void initState() {
@@ -39,17 +41,6 @@ class _GoogleMapScreenState extends State<GoogleMapScreen> {
       mapMarker = await BitmapDescriptor.fromAssetImage(ImageConfiguration(), 'Assets/new2.png');
   }
 
- void locationPosition() async {
-    Position position = await Geolocator.getCurrentPosition(desiredAccuracy: LocationAccuracy.high);
-    Position currentPosition = position;
-
-    LatLng latLatPosition = LatLng(position.latitude, position.longitude);
-
-    CameraPosition cameraPosition = new CameraPosition(target: latLatPosition, zoom: 12.5);
-    final GoogleMapController controller = await _controller.future;
-    controller.animateCamera(CameraUpdate.newCameraPosition(cameraPosition));
- }
-
   //function to add make a marker for each location that we in the databse
   void _onMapCreated(GoogleMapController controller) {
       setState(() {
@@ -58,7 +49,7 @@ class _GoogleMapScreenState extends State<GoogleMapScreen> {
           _markers.add(
             Marker(
                 markerId: MarkerId(locationsMap[k].get("name").toString()),
-                position: LatLng(double.parse(locationsMap[k].get("latitude").toString()), double.parse(locationsMap[k].get("longitude").toString())),
+                position: LatLng(double.parse(locationsMap[k].get("lat").toString()), double.parse(locationsMap[k].get("long").toString())),
                 icon: mapMarker,
                 onTap: () => Navigator.push(
                     context,
@@ -80,18 +71,23 @@ class _GoogleMapScreenState extends State<GoogleMapScreen> {
   //Building the main Google Maps content you see on screen
   @override
   Widget build(BuildContext context) {
+
+    final applicationBloc = Provider.of<ApplicationBloc>(context);
+
     return Scaffold(
       appBar: AppBar(
         title: Text('Google Map'),
       ),
-      body: Column(
+      body: (applicationBloc.currentLocation == null)
+      ? Container(child: Center(child:Text('loading map..', style: TextStyle(fontFamily: 'Avenir-Medium', color: Colors.grey[400]),),),)
+      : Column(
         children: [
           Row(
             children: [
               Expanded(child: TextFormField(
                 controller: _searchController,
                 textCapitalization: TextCapitalization.words,
-                decoration: InputDecoration(hintText: 'Search by City'),
+                decoration: InputDecoration(hintText: '  Search by City'),
                 onChanged: (value) {
                   print(value);
                 },
@@ -112,15 +108,14 @@ class _GoogleMapScreenState extends State<GoogleMapScreen> {
                   myLocationEnabled: true,
                   zoomGesturesEnabled: true,
                   zoomControlsEnabled: true,
-                  initialCameraPosition: CameraPosition(
-                    target: LatLng(29.644050, -82.348408),
-                    zoom: 12.5,
-                  ),
                   onMapCreated: (GoogleMapController controller) {
                     _controller.complete(controller);
                     _onMapCreated(controller);
-                    locationPosition();
                   },
+                  initialCameraPosition: CameraPosition(
+                    target: LatLng(applicationBloc.currentLocation.latitude, applicationBloc.currentLocation.longitude),
+                    zoom: 13,
+                  ),
                   markers: _markers,
               )
           )
@@ -136,7 +131,7 @@ class _GoogleMapScreenState extends State<GoogleMapScreen> {
     final GoogleMapController controller = await _controller.future;
     controller.animateCamera(
       CameraUpdate.newCameraPosition(
-        CameraPosition(target: LatLng(lat, lng), zoom: 12.5)
+        CameraPosition(target: LatLng(lat, lng), zoom: 13)
       ),
     );
 
