@@ -40,13 +40,7 @@ class EndangeredSpeciesScreen extends StatelessWidget {
           ),
           const Text("Description", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 17)),
           const Text(
-            "Three species of sturgeon can be found in Florida: Atlantic sturgeon "
-                "(Acipsener oxyrinchus oxyrinchus), Gulf sturgeon (Acipenser oxyrinchus desotoi) and "
-                "shortnose sturgeon (Acipenser brevirostrum). All three species have a round body imbedded with "
-                "an armor of five rows of bony plates or scutes. They have no bony skeleton. They also have no teeth and "
-                "the upper lobe of the tail is longer than the lower lobe similar to sharks. All three species are anadromous,"
-                " meaning that they move from saltwater to freshwater to spawn. Florida sturgeon can live long lives, "
-                "exceeding 25 years in some cases.",
+            "In 1991, Gulf sturgeon were listed as threatened under the Endangered Species Act after their population was greatly reduced or eliminated throughout much of their range because of overfishing, dam construction, and habitat degradation.",
             textAlign: (TextAlign.center),
             style: TextStyle(fontSize: 16),
           ),
