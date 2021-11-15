@@ -7,6 +7,10 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:provider/provider.dart';
 import 'package:untitled/application_bloc.dart';
+import 'package:untitled/menu_item.dart';
+import 'package:untitled/menu_items.dart';
+import 'package:untitled/Screens/endanger_species.dart';
+import 'package:untitled/Screens/report_violation.dart';
 
 //List and Map to store our Firebase data
 var locationsMap = Map(); // map of locations with respective information
@@ -59,6 +63,14 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text("Home Screen"),
+        actions: [
+          PopupMenuButton<MenuItem>(
+            onSelected: (item) => whenSelected (context, item),
+            itemBuilder: (context) => [
+              ...MenuItems.items.map(buildItem).toList(),
+            ],
+          ),
+        ],
       ),
       body: Center(
         child: Column(
@@ -92,6 +104,32 @@ class HomePage extends StatelessWidget {
       ),
     );
   }
+
+  PopupMenuItem<MenuItem> buildItem(MenuItem myItem) => PopupMenuItem<MenuItem>(
+    value: myItem,
+    child: Text(myItem.text),
+  );
+
+  void whenSelected(BuildContext context, MenuItem item){
+    switch (item) {
+      case MenuItems.itemESOTW:
+        Navigator.of(context).push(
+          MaterialPageRoute(
+            builder: (context) => EndangeredSpeciesScreen(),
+          ),
+        );
+        break;
+
+      case MenuItems.itemReportViolation:
+        Navigator.of(context).push(
+          MaterialPageRoute(
+            builder: (context) => ReportViolationScreen(),
+          ),
+        );
+        break;
+    }
+  }
+
 }
 
 
