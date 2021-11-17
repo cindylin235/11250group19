@@ -15,11 +15,10 @@
 
 
 ## General Information
-- Provide general information about your project here.
-- What problem does it (intend to) solve?
-- What is the purpose of your project?
-- Why did you undertake it?
-<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
+- Find My Fish is mobile application supported both on Android, and IOS devices thanks to the cross-platfrom feature of Flutter. This software utilizes Flutter for the frontend of the application, and utlizes the language Dart in order to construct the rest of the features. 
+- Find My Fish attempts to solve the lack in avaibility of information regarding our environment's endagerend species, while also providing detailed reports of what users can expect to find near their location, thus fixing helping in the awareness of their surroundings.
+- Overall, the goal of this application is to bring users adaptive information, no matter their location, on where, and what they can find in their local bodies of water, thus bringing them the best experience possbile while maintaining the integrity of our environment.
+- This project was started not only as class assignment for the class CEN 3031 at The University of Florida, but also in order to participate in one of the UF Hackathon's challeng statement which aimed at building a solution to fight against climate change.
 
 
 ## Technologies Used
