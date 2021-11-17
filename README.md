@@ -43,10 +43,17 @@ List the ready features here:
 ![alt text](https://i.ibb.co/yWq9ZRL/notifications.png)
 
 ## Setup
-What are the project requirements/dependencies? Where are they listed? A requirements.txt or a Pipfile.lock file perhaps? Where is it located?
+In order to make the explanations for this setup as detailed as possible we will put a focus on Android Studio as our IDE, and Windows as the operating system for this section of the instructions.
 
-Proceed to describe how to install / setup one's local environment / get started with the project.
+To first get started, you will want to go ahead and install Android Studio for your specific operating system. The link for the following can be found at https://developer.android.com/studio. Once you finish its installation, you can go ahead and open the IDE, and from here we will go ahead and install the rest of the required technlogoies to properly run our application.
 
+You will need to go ahead and install Flutter onto your local computer, and the download can be found at https://docs.flutter.dev/get-started/install.
+
+Once installed, make sure you extract the folder in a location you will remember as we are going to use the folder's path within our IDE. After installing, you will have to open the flutter folter and navigate to "bin". Once at this location, you will want to copy your current path as we will be setting up an environment variable for faster terminal comamands.
+
+Once you have the path, you will want to go ahead and launch the environment variable software on your Windows machine, and navivate to path as seen on the image below:
+
+![alt text](https://i.ibb.co/ygVKvJ1/path.png)
 
 ## Usage
 How does one go about using it?
