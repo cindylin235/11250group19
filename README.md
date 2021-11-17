@@ -1,6 +1,5 @@
 # Find My Fish (Group 19)
-> Find My Fish is a mobile application that allows recreational and professional users to learn more about their local bodies of water, allowing them to continue their fishing activities, while preserving our environment. The application is developped in Flutter and uses a NoSQL database (Firebase Cloud) to store and retrieve information about the supported locations.
-
+> Find My Fish is a mobile application that allows recreational and professional users to learn more about their local bodies of water, allowing them to continue their fishing activities, while preserving our environment.
 ## Table of Contents
 * [General Info](#general-information)
 * [Technologies Used](#technologies-used)
