@@ -22,16 +22,19 @@
 
 
 ## Technologies Used
-- Tech 1 - version 1.0
-- Tech 2 - version 2.0
-- Tech 3 - version 3.0
+- Flutter - version 2.53
+- Dart - version 2.12.4
+- Google Maps Flutter - version 2.0.11
+- Firebase Core - version 1.10
 
 
 ## Features
 List the ready features here:
-- Awesome feature 1
-- Awesome feature 2
-- Awesome feature 3
+- Access an interactive map focused on your location, showing your surrounding fishing locations and information regarding various species found within your envrionment.
+- Get detailed information about every location supported on the app including regulations, hours of operation, and fish species that can be found at that specific location.
+- Learn about a new endangered species every week thanks to a dedicated page which will rotate information on a weekly basis.
+- Report any violations that you are witness of with a direct link to the FWC report form.
+- Receive weekly notifications on the newly endagered species of the week, redirecting you to the ESOTW page.
 
 
 ## Screenshots
