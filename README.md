@@ -38,7 +38,7 @@ List the ready features here:
 
 
 ## Screenshots
-![Example screenshot](./img/screenshot.png)
+![alt text](https://www.cdc.gov/coronavirus/2019-ncov/videos/how-to-interpret-self-test-results/325187-B_ANIM_COVID_SelfTesting_1920x1080_thumbnail.jpg?_=40905)
 <!-- If you have screenshots you'd like to share, include them here. -->
 
 
