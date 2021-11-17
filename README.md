@@ -38,7 +38,7 @@ List the ready features here:
 
 
 ## Screenshots
-![alt text](https://imgur.com/a/o75yT3a)
+![alt text](https://ibb.co/K2ntQzY)
 <!-- If you have screenshots you'd like to share, include them here. -->
 
 
