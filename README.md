@@ -39,7 +39,7 @@ List the ready features here:
 
 ## Screenshots
 ![alt text](https://i.ibb.co/D9dB6gN/Google-Maps-page.jpg)
-<!-- If you have screenshots you'd like to share, include them here. -->
+![alt text](https://i.ibb.co/DQMNQgx/locations-page.png)
 
 
 ## Setup
