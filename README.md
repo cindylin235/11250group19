@@ -38,7 +38,7 @@ List the ready features here:
 
 
 ## Screenshots
-![alt text](https://www.industrialempathy.com/img/remote/ZiClJf-1920w.jpg)
+![alt text](https://imgur.com/a/o75yT3a)
 <!-- If you have screenshots you'd like to share, include them here. -->
 
 
