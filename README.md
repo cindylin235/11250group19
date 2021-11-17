@@ -38,7 +38,7 @@ List the ready features here:
 
 
 ## Screenshots
-![alt text](file:///C:/Users/zbour/Downloads/Google%20Maps%20page.png)
+![alt text](https://drive.google.com/file/d/10FQ-O3MPQ9vnslPpRzbUOZAxQZK8u3RB/view?usp=sharing)
 <!-- If you have screenshots you'd like to share, include them here. -->
 
 
