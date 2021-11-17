@@ -38,7 +38,7 @@ List the ready features here:
 
 
 ## Screenshots
-![alt text](https://i.ibb.co/D9dB6gN/Google-Maps-page.jpg = 100x100)
+![alt text](https://i.ibb.co/D9dB6gN/Google-Maps-page.jpg | width=100)
 <!-- If you have screenshots you'd like to share, include them here. -->
 
 
