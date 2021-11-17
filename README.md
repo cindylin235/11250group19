@@ -38,7 +38,7 @@ List the ready features here:
 
 
 ## Screenshots
-![alt text](https://500px.com/photo/1040158723/Google-Maps-page-by-Zander-Bournand)
+![alt text](https://www.industrialempathy.com/img/remote/ZiClJf-1920w.jpg)
 <!-- If you have screenshots you'd like to share, include them here. -->
 
 
