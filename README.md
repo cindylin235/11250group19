@@ -40,7 +40,7 @@ List the ready features here:
 ## Screenshots
 ![alt text](https://i.ibb.co/D9dB6gN/Google-Maps-page.jpg)
 ![alt text](https://i.ibb.co/DQMNQgx/locations-page.png)
-
+![alt text](https://i.ibb.co/yWq9ZRL/notifications.png)
 
 ## Setup
 What are the project requirements/dependencies? Where are they listed? A requirements.txt or a Pipfile.lock file perhaps? Where is it located?
