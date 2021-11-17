@@ -55,6 +55,14 @@ Once you have the path, you will want to go ahead and launch the environment var
 
 ![alt text](https://i.ibb.co/ygVKvJ1/path.png)
 
+You will now select the "path" section and create a new variable; this is where you will input your .flutter/bin path in order to create the environment variable.
+
+You are now done, installing flutter to your local machine, and in order to make sure that you have succesfully installed the framework, you may run "flutter --version" within your cmd in order to make sure your machine is detecting your installed version.
+
+You can now open Android Studio where you will start by creating your first Virtual Device. You may use any compatible virtual device manager, however utilizing Android Studio's built in AVD manager allows for an efficient way to see the code in real time, and make easy changes. When making your virtual device, make sure you select an android device which supports Google Play. The device should have a logo similar to the one you see in the image below:
+
+![alt text](https://i.ibb.co/W6kqLHD/avd-manager.png)
+
 ## Usage
 How does one go about using it?
 Provide various use cases and code examples here.
