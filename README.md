@@ -38,7 +38,7 @@ List the ready features here:
 
 
 ## Screenshots
-![alt text](https://www.cdc.gov/coronavirus/2019-ncov/videos/how-to-interpret-self-test-results/325187-B_ANIM_COVID_SelfTesting_1920x1080_thumbnail.jpg?_=40905)
+![alt text](file:///C:/Users/zbour/Downloads/Google%20Maps%20page.png)
 <!-- If you have screenshots you'd like to share, include them here. -->
 
 
