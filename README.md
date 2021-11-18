@@ -111,7 +111,7 @@ Give credit here.
 
 
 ## Contact
-Created by [@flynerdpl](https://www.flynerd.pl/) - feel free to contact me!
+Created by [Group 19](Group19CEN3031@gmail.com) - feel free to contact us!
 
 
 <!-- Optional -->
