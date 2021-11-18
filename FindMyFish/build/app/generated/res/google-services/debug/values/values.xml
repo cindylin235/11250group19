@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">963585712470-0l2bmd774arqf9ura1ne4mtq6n6mhs88.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">963585712470</string>
+    <string name="google_api_key" translatable="false">AIzaSyB61IGFsUreTdqdDeBsl3ybfoTAG_s9hFA</string>
+    <string name="google_app_id" translatable="false">1:963585712470:android:132698fc06fc004942f6f7</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyB61IGFsUreTdqdDeBsl3ybfoTAG_s9hFA</string>
+    <string name="google_storage_bucket" translatable="false">find-my-fish-8aef8.appspot.com</string>
+    <string name="project_id" translatable="false">find-my-fish-8aef8</string>
+</resources>
