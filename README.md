@@ -111,7 +111,7 @@ Give credit here.
 
 
 ## Contact
-Created by [Group 19](Group19CEN3031@gmail.com) - feel free to contact us!
+Created by Group 19 from class of Fall 2021 CEN 3031 - feel free to contact us Group19CEN3031@gmail.com!
 
 
 <!-- Optional -->
