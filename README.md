@@ -55,13 +55,21 @@ Once you have the path, you will want to go ahead and launch the environment var
 
 ![alt text](https://i.ibb.co/ygVKvJ1/path.png)
 
-You will now select the "path" section and create a new variable; this is where you will input your .flutter/bin path in order to create the environment variable.
+You will now select the "path" section and create a new variable; this is where you will input your ...flutter\bin path in order to create the environment variable.
 
 You are now done, installing flutter to your local machine, and in order to make sure that you have succesfully installed the framework, you may run "flutter --version" within your cmd in order to make sure your machine is detecting your installed version.
 
 You can now open Android Studio where you will start by creating your first Virtual Device. You may use any compatible virtual device manager, however utilizing Android Studio's built in AVD manager allows for an efficient way to see the code in real time, and make easy changes. When making your virtual device, make sure you select an android device which supports Google Play. The device should have a logo similar to the one you see in the image below:
 
 ![alt text](https://i.ibb.co/W6kqLHD/avd-manager.png)
+
+You will then have to make sure to select the version "R" of Android (Android 11.0); if not already installed, the IDE will propose you to donwload the operating system. You will then be able to make additional configurations if wanted, however your virtual device will run just fine if any are not made.
+
+Now that you have your virtual device ready to run, we are going to make changes within the settings of Android Studio in order for you to run Flutter within your IDE. You will first want to go ahead and install the Flutter plugin (this will also install the Dart plugin as they need to be installed together in order for the application to run). You can find these plugins within the "Settings" of Android Studio. To do so, click on the "File" tab on the upper left corner of the IDE, and click on "Settings" within the drop-down. Here you will select "Plugins" and search Flutter. You will then be presented wil an install butto which you will want to press. Once both plugins are installed, your settings should look somerthing like this:
+
+![alt text](https://i.ibb.co/M1fLYJ0/flutter-settings.png)
+
+You now have installed the flutter, and dart plugin within your IDE. Finally, you will have to insert the path of your Flutter SDK (installation) into Android Studio. This can be done by navigating to "Settings" and under the "Languages & Frameworks" dropdown, select "Flutter" You can now insert your parth which should look something like ...\flutter_windows_2.5.3-stable\flutter
 
 ## Usage
 How does one go about using it?
