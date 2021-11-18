@@ -69,7 +69,10 @@ Now that you have your virtual device ready to run, we are going to make changes
 
 ![alt text](https://i.ibb.co/M1fLYJ0/flutter-settings.png)
 
-You now have installed the flutter, and dart plugin within your IDE. Finally, you will have to insert the path of your Flutter SDK (installation) into Android Studio. This can be done by navigating to "Settings" and under the "Languages & Frameworks" dropdown, select "Flutter" You can now insert your parth which should look something like ...\flutter_windows_2.5.3-stable\flutter
+You now have installed the flutter, and dart plugin within your IDE. Finally, you will have to insert the path of your Flutter SDK (installation) into Android Studio. This can be done by navigating to "Settings" and under the "Languages & Frameworks" dropdown, select "Flutter" You can now insert your parth which should look something like ...\flutter_windows_2.5.3-stable\flutter. 
+
+![alt text](https://i.ibb.co/CWkycR5/download-path.png)
+
 
 ## Usage
 How does one go about using it?
