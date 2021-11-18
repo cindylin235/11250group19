@@ -73,6 +73,8 @@ You now have installed the flutter, and dart plugin within your IDE. Finally, yo
 
 ![alt text](https://i.ibb.co/CWkycR5/download-path.png)
 
+You are now ready to launch a Flutter application within your IDE, and virtual device. We will now acquire the codebase of the project so that you are able to run it on your local instance. To do so, you have to clone the repository on your local machine. Within a folder, open gitbash if possible and input the command "git clone https://github.com/cindylin235/11250group19.git" 
+
 
 ## Usage
 How does one go about using it?
