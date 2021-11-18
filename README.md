@@ -88,34 +88,27 @@ You are now ready to start the application! All dependencies have been installed
  ![alt text](https://i.ibb.co/bP0w0CD/sdk.png)
 
 
-## Usage
-How does one go about using it?
-Provide various use cases and code examples here.
-
-`write-your-code-here`
-
-
 ## Project Status
-Project is: _in progress_ / _complete_ / _no longer being worked on_. If you are no longer working on it, provide reasons why.
+Find My Fish is currently no longer being worked on as we just finished publishing the final version on our github. The project is still open to any changes made and we will be reviewing every so often if any pushes have been made on the codebase. We will update this section of the Readme if the project is picked back up by the main development team.
 
 
 ## Room for Improvement
-Include areas you believe need improvement / could be improved. Also add TODOs for future development.
+As we explained, we are still open to new changes to the project as we can potentially aim to publish the app officially if the build is a bit more complete.
 
 Room for improvement:
-- Improvement to be done 1
-- Improvement to be done 2
+- Better optimization within the code. The app currently runs rather well, however we can definetly improve in the speed of the certain processes.
+- A better UI is definetly needed. We are currently using the native UI of Flutter, and our team belives that there are better options with the use of third party libraris that may provide an overall better user-experience/
 
 To do:
-- Feature to be added 1
-- Feature to be added 2
+- Add a way for users to report FWC violations directly within the application without having to be re-directed to the FWC website.
+- Add voice search input for users to have a better way to locate a desired location.
+- Build a tutorial for first time users.
 
 
 ## Acknowledgements
 Give credit here.
-- This project was inspired by...
-- This project was based on [this tutorial](https://www.example.com).
-- Many thanks to...
+- This project was inspired by an initial idea of Jared Bowen
+- Many thanks to Group 19 from CEN 3031 of Fall 2021 for their involvment in the creation of Find My Fish :)
 
 
 ## Contact
