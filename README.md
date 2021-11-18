@@ -73,7 +73,19 @@ You now have installed the flutter, and dart plugin within your IDE. Finally, yo
 
 ![alt text](https://i.ibb.co/CWkycR5/download-path.png)
 
-You are now ready to launch a Flutter application within your IDE, and virtual device. We will now acquire the codebase of the project so that you are able to run it on your local instance. To do so, you have to clone the repository on your local machine. Within a folder, open gitbash if possible and input the command "git clone https://github.com/cindylin235/11250group19.git" 
+You are now ready to launch a Flutter application within your IDE, and virtual device. We will now acquire the codebase of the project so that you are able to run it on your local instance. To do so, you have to clone the repository on your local machine. Within a folder, open gitbash if possible and input the command "git clone https://github.com/cindylin235/11250group19.git". You now have a version of FindMyFish on you local machine, thus allowing you to now contribute to the project which is open source.
+
+You can now open the code within Android Studio; once opened, you will be prompted of a few errors as you do not have all dependencies that the project uses installed on your machine. More than likely your IDE will alert you of this and will propose you to get the depedencies (you can see this in the image below).
+
+![alt text](https://i.ibb.co/R6zbs6Y/alerty.png)
+
+ You must accept this propositon; if not given, you can run the following command within your terminal "(path of flutter.bat ex: ...flutter\bin\flutter.bat) --no-color pub get". This will retrieve all required dependencies for Find My Fish.
+ 
+ ![alt text](https://i.ibb.co/5r9hxrt/command.png)
+
+You are now ready to start the application! All dependencies have been installed and the app is ready to run. Make sure you have started your virtual device and that your IDE is showing the following:
+
+ ![alt text](https://i.ibb.co/bP0w0CD/sdk.png)
 
 
 ## Usage
