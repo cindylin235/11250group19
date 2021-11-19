@@ -61,13 +61,21 @@ You will now select the "path" section and create a new variable; this is where 
 
 You are now done, installing flutter to your local machine, and in order to make sure that you have successfully installed the framework, you may run "flutter --version" within your cmd in order to make sure your machine is detecting your installed version.
 
-You can now open Android Studio where you will start by creating your first Virtual Device. You may use any compatible virtual device manager, however utilizing Android Studio's built in AVD manager allows for an efficient way to see the code in real time, and make easy changes. When making your virtual device, make sure you select an android device which supports Google Play. The device should have a logo similar to the one you see in the image below:
+You are now ready to open a Flutter application within Android Studio. We will now acquire the codebase of the project so that you are able to run it on your local instance. To do so, you have to clone the repository on your local machine. Within a folder, open git bash if possible and input the command "git clone https://github.com/cindylin235/11250group19.git". You now have a version of FindMyFish on your local machine, thus allowing you to now contribute to the project which is open source.
+
+You may now launch Android Studio where you will be prompted to create, or open a project. You can select the "open" option and locate the the folder called "FindMyFish_devBuild_2.0". Once open you will be prompted with a few errors that will fix with a few changes within the IDE settings; however for the moment we will go ahead and create our virtual device which will run our application. 
+
+You can access the AVD manager (helps you organize your various virtual devices) with the button at the top right of the page as seen in the image below:
+
+![alt text](https://www.linkpicture.com/q/AVD-manager-2.png)
+
+You will now be creating your first Virtual Device. You may use any compatible virtual device manager, however utilizing Android Studio's built in AVD manager allows for an efficient way to see the code in real time, and make easy changes. When making your virtual device, make sure you select an android device which supports Google Play. The device should have a logo similar to the one you see in the image below:
 
 ![alt text](https://i.ibb.co/W6kqLHD/avd-manager.png)
 
 You will then have to make sure to select the version "R" of Android (Android 11.0); if not already installed, the IDE will propose you to download the operating system. You will then be able to make additional configurations if wanted, however your virtual device will run just fine if any are not made.
 
-Now that you have your virtual device ready to run, we are going to make changes within the settings of Android Studio in order for you to run Flutter within your IDE. You will first want to go ahead and install the Flutter plugin (this will also install the Dart plugin as they need to be installed together in order for the application to run). You can find these plugins within the "Settings" of Android Studio. To do so, click on the "File" tab on the upper left corner of the IDE, and click on "Settings" within the drop-down. Here you will select "Plugins" and search Flutter. You will then be presented will an install button which you will want to press. Once both plugins are installed, your settings should look something like this:
+Now that you have your virtual device ready to run, we are going to make changes within the settings of Android Studio in order for you to run a Flutter application within your IDE. You will first want to go ahead and install the Flutter plugin (this will also install the Dart plugin as they need to be installed together in order for the application to run). You can find these plugins within the "Settings" of Android Studio. To do so, click on the "File" tab on the upper left corner of the IDE, and click on "Settings" within the drop-down. Here you will select "Plugins" and search Flutter. You will then be presented will an install button which you will want to press. Once both plugins are installed, your settings should look something like this:
 
 ![alt text](https://i.ibb.co/M1fLYJ0/flutter-settings.png)
 
@@ -75,9 +83,7 @@ You now have installed the flutter, and dart plugin within your IDE. Finally, yo
 
 ![alt text](https://i.ibb.co/CWkycR5/download-path.png)
 
-You are now ready to launch a Flutter application within your IDE, and virtual device. We will now acquire the codebase of the project so that you are able to run it on your local instance. To do so, you have to clone the repository on your local machine. Within a folder, open git bash if possible and input the command "git clone https://github.com/cindylin235/11250group19.git". You now have a version of FindMyFish on your local machine, thus allowing you to now contribute to the project which is open source.
-
-You can now open the code within Android Studio; once opened, you will be prompted for a few errors as you do not have all dependencies that the project uses installed on your machine. More than likely your IDE will alert you of this and will propose you to get the dependencies (you can see this in the image below).
+We can now focus on the codebase... Although we have setup our IDE to support Flutter, you will be prompted for a few errors as you do not have all dependencies that the project uses installed on your machine. More than likely your IDE will alert you of this and will propose you to get the dependencies (you can see this in the image below).
 
 ![alt text](https://i.ibb.co/R6zbs6Y/alerty.png)
 
