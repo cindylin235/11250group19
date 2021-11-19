@@ -67,7 +67,7 @@ You may now launch Android Studio where you will be prompted to create, or open 
 
 You can access the AVD manager (helps you organize your various virtual devices) with the button at the top right of the page as seen in the image below:
 
-![alt text](https://www.linkpicture.com/q/AVD-manager-2.png)
+![alt text](https://i.ibb.co/rFwRk8x/AVD-manager-2-final.png)
 
 You will now be creating your first Virtual Device. You may use any compatible virtual device manager, however utilizing Android Studio's built in AVD manager allows for an efficient way to see the code in real time, and make easy changes. When making your virtual device, make sure you select an android device which supports Google Play. The device should have a logo similar to the one you see in the image below:
 
