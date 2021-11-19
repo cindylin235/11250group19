@@ -94,7 +94,8 @@ We can now focus on the codebase... Although we have setup our IDE to support Fl
 You are now ready to start the application! All dependencies have been installed and the app is ready to run. Make sure you have started your virtual device and that your IDE is showing the following:
 
  ![alt text](https://i.ibb.co/bP0w0CD/sdk.png)
-
+ 
+ If this is not the case, restarting your computer will resolve the issue!
 
 ## Project Status
 Find My Fish is currently no longer being worked on as we just finished publishing the final version on our github. The project is still open to any changes made and we will be reviewing every so often if any pushes have been made on the codebase. We will update this section of the Readme if the project is picked back up by the main development team.
