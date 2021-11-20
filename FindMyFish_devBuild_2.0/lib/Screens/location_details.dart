@@ -1,3 +1,5 @@
+//Page which displays the details regarding a location (changes for which ever location is chosen)
+
 // ignore_for_file: prefer_const_constructors
 
 //Import all necessary packages to run

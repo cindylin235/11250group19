@@ -1,3 +1,5 @@
+//Endangered species page showing the weekly species of the week
+
 import 'package:flutter/material.dart';
 
 class EndangeredSpeciesScreen extends StatelessWidget {

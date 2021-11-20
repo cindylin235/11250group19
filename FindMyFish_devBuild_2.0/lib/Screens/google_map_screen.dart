@@ -1,3 +1,5 @@
+//Page allowing users to access the Google Maps in order to find fishing locations near them
+
 // ignore_for_file: prefer_const_constructors
 
 //Import all necessary packages to run

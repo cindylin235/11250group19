@@ -1,3 +1,5 @@
+//Application bloc allowing for us to handle the user's location
+
 import 'package:flutter/cupertino.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';

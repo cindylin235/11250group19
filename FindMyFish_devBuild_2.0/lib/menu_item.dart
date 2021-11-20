@@ -1,3 +1,5 @@
+//Option menu class used within main screen
+
 import 'package:flutter/material.dart';
 
 class MenuItem {

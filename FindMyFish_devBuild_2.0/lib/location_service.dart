@@ -1,3 +1,5 @@
+//Allows for the users to search locations using the search bar
+
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert' as convert;

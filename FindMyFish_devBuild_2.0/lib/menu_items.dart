@@ -1,3 +1,5 @@
+//Sub-class for each of the menu items within the menu bar
+
 import 'package:flutter/material.dart';
 import 'package:untitled/menu_item.dart';
 

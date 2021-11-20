@@ -1,9 +1,9 @@
-#Wed Nov 17 20:16:03 EST 2021
-base.2=C\:\\adadadadad\\11250group19\\FindMyFish_devBuild_2.0\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes3.dex
+#Thu Nov 18 22:57:46 EST 2021
+base.2=C\:\\adad\\11250group19\\FindMyFish_devBuild_2.0\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes3.dex
 path.2=classes3.dex
-base.1=C\:\\adadadadad\\11250group19\\FindMyFish_devBuild_2.0\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes2.dex
+base.1=C\:\\adad\\11250group19\\FindMyFish_devBuild_2.0\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes2.dex
 path.1=classes2.dex
-base.0=C\:\\adadadadad\\11250group19\\FindMyFish_devBuild_2.0\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+base.0=C\:\\adad\\11250group19\\FindMyFish_devBuild_2.0\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
 renamed.2=classes3.dex
 renamed.1=classes2.dex
 renamed.0=classes.dex

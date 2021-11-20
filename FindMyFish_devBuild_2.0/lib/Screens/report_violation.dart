@@ -1,3 +1,5 @@
+//Page which allows users to report any violations that they are witness of
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';

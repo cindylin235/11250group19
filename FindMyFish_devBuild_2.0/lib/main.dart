@@ -1,3 +1,5 @@
+//Main page of the application allowing us to access various features of our application
+
 // ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors
 
 //Import all necessary packages to run
@@ -64,6 +66,7 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         title: Text("Home Screen"),
         actions: [
+          //Option button located at the top right of the main screen
           PopupMenuButton<MenuItem>(
             onSelected: (item) => whenSelected (context, item),
             itemBuilder: (context) => [
@@ -105,11 +108,13 @@ class HomePage extends StatelessWidget {
     );
   }
 
+  //Option menu located at top-right of main page
   PopupMenuItem<MenuItem> buildItem(MenuItem myItem) => PopupMenuItem<MenuItem>(
     value: myItem,
     child: Text(myItem.text),
   );
 
+  //Function which triggers whenever the different menus are selected.
   void whenSelected(BuildContext context, MenuItem item){
     switch (item) {
       case MenuItems.itemESOTW:
